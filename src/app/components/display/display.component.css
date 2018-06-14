@@ -1,0 +1,14 @@
+.table {
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.table-header {
+  text-align: left;
+}
+
+.table-header,
+.table-cell {
+  padding: 10px 20px;
+  border: 1px solid grey;
+}

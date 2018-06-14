@@ -1,0 +1,14 @@
+<table *ngIf="users$" class="table">
+  <tr>
+    <th class="table-header">First name</th>
+    <th class="table-header">Last name</th>
+    <th class="table-header">City</th>
+    <th class="table-header">Country</th>
+  </tr>
+  <tr *ngFor="let user of users$ | async">
+    <td class="table-cell">{{ user.firstName }}</td>
+    <td class="table-cell">{{ user.lastName }}</td>
+    <td class="table-cell">{{ user.city }}</td>
+    <td class="table-cell">{{ user.country }}</td>
+  </tr>
+</table>
