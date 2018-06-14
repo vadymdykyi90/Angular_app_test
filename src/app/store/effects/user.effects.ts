@@ -18,7 +18,7 @@ export class UserEffects {
   ) {}
 
   @Effect()
-  loadMovies$ = this.actions$.ofType(UserActions.REQUEST_USERS).pipe(
+  loadUsers$ = this.actions$.ofType(UserActions.REQUEST_USERS).pipe(
     switchMap(() => this.userService.getUsers()),
     map((users: User[]) =>  {
       return new UserActions.LoadUsers(users);
